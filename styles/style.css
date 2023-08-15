@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: rgb(3, 42, 42); */
+    background-color: rgb(45, 45, 45);
+    color: white;
+
+    font-family: 'Roboto Slab';
+}
+.header{
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.header div{
+    background-color: rgba(255, 0, 0, 0.336);
+    
+    width: 50%;
+    height: 40%;
+
+    border: 0.1vw solid rgb(198, 68, 68);
+    border-radius: .5vmax;
+
+    font-size: 4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    position: absolute;
+}
+.themeChange{
+    display: inline-block;
+
+    width: 4.5vmax;
+    height: 4.5vmax;
+
+    background-color: darkcyan;
+    color: black;
+
+    text-align: center;
+    
+    border: none;
+    border-radius: 1vw;
+    
+    padding: 0.5% 1%;
+
+    position: absolute;
+    right: 3%;
+    top: 10%;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.themeChange span{
+    font-size: 3vmax;
+
+    position: absolute;
+
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.on{
+    visibility: hidden;
+}
+.shortcuts{
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+.shortcut{
+    border: .2vmax solid rgb(210, 97, 97);
+
+    font-size: 2vw;
+
+    height: 12vw;
+    width: 15vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shortcuts a{
+    text-decoration: none;
+    color: white;
+}
+
+/* All shortcut indivisual css */
+.shortcut img{
+    width: 3.4vw;
+    height: 5vw;
+    object-fit: contain;
+}
+.shortcut1{
+    background-color: rgba(255, 0, 0, 0.300);
+}
+.shortcut2{
+    background-color: rgba(255, 255, 255, 0.300);
+    border-color: white;
+}
+.shortcut3{
+    background-color: rgba(255, 221, 149, 0.300);
+    border-color: #ffdd95;
+}
+.shortcut3 img{
+    width: 4vw;
+}
+.shortcut4 img{
+    width: 4.5vw;
+}
+.shortcut4{
+    background-color: rgba(88, 101, 242,0.300);
+    border-color: #5865F2;
+}
+.shortcut5 {
+    background: linear-gradient(to bottom, rgba(193, 53, 132, 0.300), rgba(193, 53, 132, 0.303));
+    border-color: #C13584;
+}
+
+.shortcut6 img{
+    width: 4.5vw;
+}
+.shortcut6{
+    background-color: rgba(29, 160, 242, 0.300);
+    border-color: #1DA1F2;
+}
+
+.shortcut:hover{
+    transform: translateY(-5px);
+}
+.welcome{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    top: 35%;
+    right: 5%;
+
+    width: 40vw;
+    height: 50vh;
+
+    transform: rotateZ(-1deg);
+
+    border-top: 1px solid coral;
+    border-bottom: 1px solid yellow;
+}
+.welcome h1::first-line{
+    color: coral;
+}
+.shortcut{
+    user-select: none;
+}
+::selection{
+    background-color: rgb(28, 28, 28);
+    color: darkgreen;
+}
